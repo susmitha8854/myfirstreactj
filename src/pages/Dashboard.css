@@ -1,0 +1,114 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:hsla(88, 30%, 89%, 0.655);
+}
+
+.container{
+  display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+  width:70px;
+  background:#1152a7;
+  color:white;
+  height:100vh;
+  padding:20px 10px;
+  transition:0.3s;
+  overflow:hidden;
+}
+
+.sidebar:hover{
+  width:220px;
+}
+
+.logo{
+  margin-bottom:30px;
+}
+
+.sidebar ul{
+  list-style:none;
+  padding:0;
+}
+
+.sidebar li{
+  padding:12px;
+  margin-bottom:10px;
+  transition:0.3s;
+  white-space:nowrap;
+}
+
+.sidebar li:hover{
+  background:#525533;
+  border-radius:5px;
+}
+
+.sidebar a{
+  color:white;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.sidebar span{
+  opacity:0;
+  transition:0.3s;
+}
+
+.sidebar:hover span{
+  opacity:1;
+}
+
+/* Main */
+.dashboard-main{
+  flex:1;
+  padding:30px;
+}
+
+/* Cards */
+.cards{
+  display:flex;
+  gap:20px;
+  margin-bottom:30px;
+  flex-wrap:wrap;
+}
+
+.card-box{
+  flex:1;
+  min-width:200px;
+  padding:20px;
+  color:white;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card-box:hover{
+  transform:translateY(-5px);
+}
+
+.users{
+  background:#1a68a0;
+}
+
+.skills{
+  background:#2ad638;
+}
+
+.requests{
+  background:#d3932b;
+}
+
+.card-box p{
+  font-size:28px;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+h2{
+  color:#1e293b;
+  margin-bottom:20px;
+}
